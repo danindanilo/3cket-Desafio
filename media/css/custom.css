@@ -61,7 +61,6 @@ body {
     font-family: Arial;
 }
 
-/* Center website */
 .main {
     max-width: 1000px;
     margin: auto;
@@ -76,21 +75,17 @@ h1 {
     margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row>.column {
     padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
     display: none;
-    /* Hide columns by default */
 }
 
-/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
@@ -103,12 +98,10 @@ h1 {
     padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
 
-/* Style the buttons */
 .btn {
     border: none;
     outline: none;
@@ -117,13 +110,20 @@ h1 {
     cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
 .btn:hover {
     background-color: #ddd;
 }
 
-/* Add a dark background color to the active button */
 .btn.active {
     background-color: #666;
     color: white;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 1030 !important;
 }

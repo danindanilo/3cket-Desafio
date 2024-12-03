@@ -65,6 +65,8 @@
     // Apagar Categoria
     if(isset($_POST['deleteCategory'])){
         $deleteCategory = $pdo->prepare("DELETE FROM category WHERE id_category = ?")->execute([$_POST['deleteCategory']]);
+        $deleteImages = $pdo->prepare("DELETE FROM image WHERE cod_category = ?")->execute([$_POST['deleteCategory']]);
+
     }
 
     // Listagem de categorias

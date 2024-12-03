@@ -86,7 +86,6 @@
         $dst = imagecreatetruecolor($w, $h);
         imagecopyresampled($dst, $src, 0, 0, 0, 0, $w, $h, $width, $height);
 
-        die(var_dump_pretty($dst));
         return $dst;
     
     }

@@ -11,7 +11,6 @@
                                 <h2>Galeria</h2>
                                 <div id="myBtnContainer">
                                     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-
                                     <?php foreach($categories as $categoria): 
                                         if($categoria['imageCounter'] > 0): ?>
                                             <button class="btn" onclick="filterSelection('category<?= $categoria['id_category'] ?>')"> <?=$categoria['name']?></button>
@@ -59,7 +58,7 @@
                                     <p id="maxSiseError" class="error text-danger"></p>
 
                                     <div class="mb-3 mt-3 text-right">
-                                        <button type="submit" id="disabledBtn" class="btn btn-edit" disabled>Submeter</button>
+                                        <button type="submit" id="disabledBtn" class="btn btn-edit">Submeter</button>
                                     </div>
                                 </form>
 
@@ -69,6 +68,7 @@
                 </div>
             </section>
         <?php endif?>
+
         <!-- Categorias section-->
         <section class="bg-light" id="categories">
             <div class="container px-4">
@@ -155,7 +155,7 @@
                                             
                                         </td>
                                         <td class="justify-content-center"><?= $c['imageCounter'] ?></td>
-                                        <td class="d-flex justify-content-end"> <!-- justify-content-end -->
+                                        <td class="d-flex justify-content-end">
                                             <div class="row">
                                                 <div class="col">
                                                     <form method="post" hidden>
